@@ -2,6 +2,10 @@
   "name": "utils",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev:build": "NODE_ENV=development webpack --config webpack.config.js --mode=development -w"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -13,5 +17,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   }
 }
